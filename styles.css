@@ -434,7 +434,7 @@ form input[type="submit"]:hover{
 }
 
 .header.desktop-only .icon{
-   top: 3px;
+   top: 0px;
 }
 
 .icon{
