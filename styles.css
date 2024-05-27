@@ -513,3 +513,6 @@ form input[type="submit"]:hover{
 
 
 }
+nav{
+    padding: 0 !important;
+}
