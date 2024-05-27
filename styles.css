@@ -500,7 +500,8 @@ form input[type="submit"]:hover {
     margin: 10px;
     padding: 5px;
     transition: background-color 0.5s;
-
+    margin-top: 2px;
+    margin-left: 3px;
 }
 
 .header-image {
