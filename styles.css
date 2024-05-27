@@ -180,7 +180,7 @@ body::-webkit-scrollbar {
 
     width: calc(100vw - 20px);
     left: 10px;
-    height: 9vh;
+    height: 64px;
 }
 
 .fixed-header-content {
