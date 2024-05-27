@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #333; /* Changed this line */
+    background-color: #333;
+    /* Changed this line */
     color: #fff;
 }
 
@@ -9,110 +10,121 @@ body {
 
 
 @keyframes sticky-parallax-header-move-and-size {
-	from {
-		background-position: 50% 0;
+    from {
+        background-position: 50% 0;
         height: calc(100vh - 20px);
 
-        background-color: #555; /* Changed this line */
-	}
-	to {
-		background-position: 50% 100%;
-		height: 9vh;
-            
-            background-color: #5559; /* Changed this line */
-	}
+        background-color: #555;
+        /* Changed this line */
+    }
+
+    to {
+        background-position: 50% 100%;
+        height: 9vh;
+
+        background-color: #5559;
+        /* Changed this line */
+    }
 }
 
 
 @keyframes sticky-parallax-image {
-	from {
+    from {
 
 
         width: 100%;
         flex: 3;
-	}
-	to {
+    }
+
+    to {
         width: 0%;
         flex: 1;
-	}
+    }
 }
 
 @keyframes sticky-parallax-opacity {
-	from {
+    from {
 
         opacity: 1;
-	}
-	to {
+    }
+
+    to {
         opacity: 0;
-	}
+    }
 }
+
 @keyframes sticky-parallax-apear {
-	from {
+    from {
 
         opacity: 0;
-	}
-	to {
+    }
+
+    to {
         opacity: 1;
-	}
+    }
 }
 
 
 
 @keyframes sticky-parallax-positionTitle {
-	from {
+    from {
 
         margin: 0;
         position: relative;
-	}
-	to {
+    }
+
+    to {
         margin: 10px;
         position: relative;
-        
-	}
+
+    }
 }
 
 
 @keyframes sticky-parallax-textContent {
-	from {
+    from {
 
         margin: 0;
         position: relative;
         left: 5vh;
 
-	}
-	to {
+    }
+
+    to {
         margin: 10px;
         position: relative;
         left: 0vh;
-        
-	}
+
+    }
 }
 
 body::-webkit-scrollbar {
     display: none;
-  }
-  .header h1 {
+}
 
-    margin:10px
+.header h1 {
 
-  }
+    margin: 10px
+}
+
 .header {
     text-align: center;
-    background-color: #555; /* Changed this line */
+    background-color: #555;
+    /* Changed this line */
     color: #fff;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     display: flex;
     width: calc(100vw - 20px);
     left: 10px;
-    
+
     height: calc(100vh - 20px);
     position: fixed;
     top: 10px;
     overflow: hidden;
-	animation: sticky-parallax-header-move-and-size linear forwards;
-	animation-timeline: scroll();
-	animation-range: 0vh 90vh;
+    animation: sticky-parallax-header-move-and-size linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0vh 90vh;
 
     backdrop-filter: blur(10px);
 
@@ -122,8 +134,10 @@ body::-webkit-scrollbar {
 
 
 }
-.fixed-header{
-    background-color: #5559; /* Changed this line */
+
+.fixed-header {
+    background-color: #5559;
+    /* Changed this line */
 
     backdrop-filter: blur(10px);
 
@@ -133,17 +147,18 @@ body::-webkit-scrollbar {
     overflow: hidden;
     width: 100%;
     z-index: 100;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     display: flex;
-align-items: center;
+    align-items: center;
 
     width: calc(100vw - 20px);
     left: 10px;
     height: 9vh;
 }
-.fixed-header-content{
-    flex: 2!important;
+
+.fixed-header-content {
+    flex: 2 !important;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -153,11 +168,13 @@ align-items: center;
     position: relative;
     left: 0;
 }
-svg{
+
+svg {
     pointer-events: none;
 }
-.header-content  .desc,
-.header-content > .navigation{
+
+.header-content .desc,
+.header-content>.navigation {
 
     animation: sticky-parallax-opacity linear forwards;
     animation-timeline: scroll(root);
@@ -165,8 +182,9 @@ svg{
 
 
 }
-.fixed-header > div{
-    flex: 1; 
+
+.fixed-header>div {
+    flex: 1;
 
 }
 
@@ -174,8 +192,9 @@ svg{
 .header-content {
     z-index: 10;
     position: relative;
-    left: 5vh; /* Changed this line */
-    flex:2;
+    left: 5vh;
+    /* Changed this line */
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -185,16 +204,17 @@ svg{
     animation-range: 0vh 90vh;
 
 }
-.header-content > .navigation{
+
+.header-content>.navigation {
     margin-bottom: 20px;
 }
 
-.header-image > .navigation > a{
-    margin:0 !important;
+.header-image>.navigation>a {
+    margin: 0 !important;
     border-radius: 0 !important;
 
 
-    padding:0% !important;
+    padding: 0% !important;
     height: 9vh;
     text-align: center;
     display: flex;
@@ -203,22 +223,22 @@ svg{
 
 }
 
-.header .header-image > .navigation{
+.header .header-image>.navigation {
     animation: sticky-parallax-apear linear forwards;
     animation-timeline: scroll(root);
     animation-range: 0vh 90vh;
 }
 
-.navigation{
+.navigation {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     overflow: hidden;
-    
+
 }
 
-.navigation > a{
+.navigation>a {
     flex: 1;
     margin: 10px;
     width: 70%;
@@ -227,17 +247,19 @@ svg{
     padding: 35px;
     border-radius: 25px;
     transition: background-color 0.5s;
-    background-color: #333; /* Changed this line */
+    background-color: #333;
+    /* Changed this line */
 
 }
 
-.navigation > a:hover{
-    background-color: #222; /* Changed this line */
+.navigation>a:hover {
+    background-color: #222;
+    /* Changed this line */
 
 }
 
-.header .header-image{
-    flex:3;
+.header .header-image {
+    flex: 3;
     position: relative;
     z-index: 0;
     height: 100%;
@@ -245,12 +267,13 @@ svg{
 
 
     animation: sticky-parallax-image linear forwards;
-    animation-timeline:  scroll(root);
+    animation-timeline: scroll(root);
 
     animation-range: 0vh 90vh;
 
 }
-.header-image img{
+
+.header-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -261,35 +284,39 @@ svg{
     filter: brightness(0.5);
 
 }
-.rightTriangle{
+
+.rightTriangle {
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     height: 100%;
-    
+
 }
+
 .trapezoid {
     position: absolute;
     z-index: 1;
     top: 0;
-    right:  35px;
+    right: 35px;
     height: 100%;
     pointer-events: none;
-    
+
 }
+
 .header-text .trapezoid {
     position: absolute;
     z-index: 1;
     top: 0;
-    right:  -1px;
+    right: -1px;
     height: 100%;
     pointer-events: none;
     z-index: -1;
 
     backdrop-filter: blur(10px);
-    
+
 }
+
 .projects {
     padding-top: 100vh;
     display: flex;
@@ -299,7 +326,7 @@ svg{
 
 }
 
-.header-image .navigation{
+.header-image .navigation {
     flex-direction: row;
 }
 
@@ -308,17 +335,20 @@ svg{
 .content {
     margin: 50px;
     padding: 20px;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
-    background-color: #555; /* Changed this line */
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: #555;
+    /* Changed this line */
     border-radius: 15px;
 }
+
 form {
     display: flex;
     flex-direction: column;
 }
 
 
-form input, form textarea {
+form input,
+form textarea {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -327,32 +357,40 @@ form input, form textarea {
 
 
 
-h1, h2 {
+h1,
+h2 {
     color: #fff;
 }
-.header h1, .header h2 {
+
+.header h1,
+.header h2 {
     color: #fff;
 }
-nav{
-    
+
+nav {
+
     padding: 10px;
     border-radius: 5px;
 }
-nav a{
+
+nav a {
     color: #fff;
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
     transition: background-color 0.5s;
-    background-color: #333; /* Changed this line */
+    background-color: #333;
+    /* Changed this line */
 }
-nav a:hover{
-    background-color: #222; /* Changed this line */
+
+nav a:hover {
+    background-color: #222;
+    /* Changed this line */
 }
 
 .project {
 
-    height:auto;
+    height: auto;
     display: flex;
     margin: 10px;
     max-height: 60vh;
@@ -360,66 +398,76 @@ nav a:hover{
     overflow: hidden;
     background-color: #555;
 }
-.project > div{
+
+.project>div {
     flex: 1;
 }
-.project-image{
+
+.project-image {
     width: 100%;
     display: flex;
     position: relative;
-    
+
     align-items: center;
     justify-content: center;
 
 }
-.project-image img{
+
+.project-image img {
     width: 100%;
 
     align-self: center;
-    
+
     object-fit: cover;
- 
+
 }
-.project .navigation{
+
+.project .navigation {
     flex-direction: row;
 }
-.project-content{
+
+.project-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
 }
-.left{
+
+.left {
 
     text-align: right;
 }
-.navigation{
+
+.navigation {
     text-align: center;
 }
 
-.left .rightTriangle{
+.left .rightTriangle {
     right: -1px;
     left: auto;
 }
 
-.content{
+.content {
     margin-top: 12vh;
 }
 
-.form{
+.form {
     display: flex;
 }
-.form .input{
+
+.form .input {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-#message{
+
+#message {
     height: 35vh;
 }
 
-form input[type="submit"]{
-    background-color: #333; /* Changed this line */
+form input[type="submit"] {
+    background-color: #333;
+    /* Changed this line */
     color: #fff;
     border: none;
     padding: 10px;
@@ -429,15 +477,17 @@ form input[type="submit"]{
     width: 30%;
     margin-left: auto;
 }
-form input[type="submit"]:hover{
-    background-color: #111; /* Changed this line */
+
+form input[type="submit"]:hover {
+    background-color: #111;
+    /* Changed this line */
 }
 
-.header.desktop-only .icon{
-   top: 0px;
+.header.desktop-only .icon {
+    top: 0px;
 }
 
-.icon{
+.icon {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -445,16 +495,19 @@ form input[type="submit"]:hover{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #333; /* Changed this line */
+    background-color: #333;
+    /* Changed this line */
     margin: 10px;
     padding: 5px;
     transition: background-color 0.5s;
 
 }
-.header-image{
+
+.header-image {
     position: relative;
 }
-.movile-only{
+
+.movile-only {
     display: none;
 }
 
@@ -463,13 +516,15 @@ form input[type="submit"]:hover{
 
 
 
-    .movile-only{
+    .movile-only {
         display: block;
     }
-    .desktop-only{
+
+    .desktop-only {
         display: none;
     }
-    .projects{
+
+    .projects {
         padding-top: 20vh;
     }
 
@@ -477,42 +532,80 @@ form input[type="submit"]:hover{
     .fixed-header h1 {
         font-size: 1.3em;
     }
-    .fixed-header{
+
+    .fixed-header {
         flex-direction: column;
         height: auto;
     }
-    .fixed-header svg{
+
+    .fixed-header svg {
         display: none;
     }
-    .fixed-header-content{
+
+    .fixed-header-content {
         padding: 0px;
     }
-    .fixed-header .navigation a{
 
-        margin: 15px!important;
-        border-radius: 10px!important;
+    .fixed-header .navigation a {
+
+        margin: 15px !important;
+        border-radius: 10px !important;
     }
-    .content{
-        margin-top: 20vh!important;
+
+    .content {
+        margin-top: 20vh !important;
         margin: 10px;
     }
-    form input[type="submit"]{
+
+    form input[type="submit"] {
         width: 100%;
     }
 
+    .project {
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+    }
+    .form {
+        flex-direction: column;
+    }
+    
+    .project-image {
+        position: absolute;
+        opacity: .3;
+        bottom: 0;
+    }
+    .project-content {
+        padding: 10px;
+        position: relative;
+        z-index: 1;
+        border-radius: 30px;
+        margin: 10px;
 
+    }
+    .rightTriangle {
+        display: none;
+
+    }
 }
 
 
 @media (max-width: 500px) {
 
-.form{
-    flex-direction: column;
-}
-    
+
+
+
+
+
+
+    .navigation>a {
+        padding: 10px;
+
+    }
 
 
 }
-nav{
+
+nav {
     padding: 0 !important;
 }
